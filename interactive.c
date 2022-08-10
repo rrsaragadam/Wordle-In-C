@@ -1,5 +1,5 @@
 // This program allows you to play the Wordle game interactively in the console
-// Note: you will first need to implement the wordle.c module :-) 
+// Note: this uses the implementation of the wordle.c module
 
 #include <assert.h>
 #include <stdio.h>
