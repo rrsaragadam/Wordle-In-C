@@ -1,7 +1,5 @@
 // this module provides functions that can be used to play Wordle
 
-// SEASHELL_READONLY
-
 #include <stdbool.h>
 
 // all "secret" chars are only lowercase letters (a...z)
