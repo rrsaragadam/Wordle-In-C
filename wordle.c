@@ -2,8 +2,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
-#include "cs136-trace.h"                             
+#include <stdbool.h>                         
 
 // see wordle.h
 bool evaluate_guess(const char *secret, const char *guess, char *result) {
@@ -153,38 +152,6 @@ int find_solution(char *guesses[], char *results[], int num_guesses,
       solutions[count] = word_list[i];
       count++;
     }
-    /*
-    for (int a = 0; a < num_guesses; a++) {
-      for (int x = 0; x < len; x++) { // .....
-        assert(results[a][x]);
-        assert(guesses[a][x]);
-        assert(word_list[i][x]);
-        if (results[a][x] >= 'A' && results[a][x] <= 'Z') {
-          if (word_list[i][x] != results[a][x]) {
-            break;
-          }
-        } else if (results[a][x] >= 'a' && results[a][x] <= 'z') {
-          if (word_list[i][x] == results[a][x]) {
-            break;
-          }
-          int counter = 0;
-        for (int pos = 0; pos < nextlen; pos++) {
-          if (pos == a) {
-            continue;
-          } else {
-            if (next_guess[pos] == results[i][a]) {
-              counter++;
-            }
-          }
-        }
-        if (!counter) {
-          break;
-        }
-        } else if (results[a][x] == '.') {
-          
-        }
-      }
-    }*/
   }
    return count;
 }
